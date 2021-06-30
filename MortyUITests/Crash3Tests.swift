@@ -35,6 +35,8 @@ final class Crash3Tests: XCTestCase {
         app.tables/*@START_MENU_TOKEN@*/.textFields["Search"]/*[[".cells[\"Search\"].textFields[\"Search\"]",".textFields[\"Search\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
             .tap()
         
+        sleep(1)
+        
         app/*@START_MENU_TOKEN@*/.keys["C"]/*[[".keyboards.keys[\"C\"]",".keys[\"C\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
         app.keys["r"].tap()
         app.keys["a"].tap()
