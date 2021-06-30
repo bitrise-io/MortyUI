@@ -7,7 +7,6 @@
 
 import SwiftUI
 import UIKit
-import Firebase
 
 @main
 struct MortyUIApp: App {
@@ -28,8 +27,6 @@ struct MortyUIApp: App {
     // MARK: - Scene
     
     var body: some Scene {
-        FirebaseApp.configure()
-        
         return WindowGroup {
             TabbarView()
         }

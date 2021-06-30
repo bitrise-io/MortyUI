@@ -23,8 +23,6 @@
 		1099E43025BB3CAE00A3EB7D /* Crash4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1099E42F25BB3CAE00A3EB7D /* Crash4Tests.swift */; };
 		1099E43425BB3CB500A3EB7D /* Crash5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1099E43325BB3CB500A3EB7D /* Crash5Tests.swift */; };
 		1099E43825BB3CFB00A3EB7D /* Crash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1099E43725BB3CFB00A3EB7D /* Crash.swift */; };
-		10B1F42425FB7317004E417A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 10B1F42325FB7317004E417A /* GoogleService-Info.plist */; };
-		10B1F42D25FB7712004E417A /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 10B1F42C25FB7712004E417A /* FirebaseCrashlytics */; };
 		10B1F43425FB841A004E417A /* Trace in Frameworks */ = {isa = PBXBuildFile; productRef = 10B1F43325FB841A004E417A /* Trace */; };
 		10D1BD5525DA8CF200C6A5D3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10D1BD5425DA8CF200C6A5D3 /* QuartzCore.framework */; };
 		10D1BD5725DA8CF800C6A5D3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10D1BD5625DA8CF800C6A5D3 /* UIKit.framework */; };
@@ -81,7 +79,6 @@
 		1099E42F25BB3CAE00A3EB7D /* Crash4Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crash4Tests.swift; sourceTree = "<group>"; };
 		1099E43325BB3CB500A3EB7D /* Crash5Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crash5Tests.swift; sourceTree = "<group>"; };
 		1099E43725BB3CFB00A3EB7D /* Crash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crash.swift; sourceTree = "<group>"; };
-		10B1F42325FB7317004E417A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		10D1BD5425DA8CF200C6A5D3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		10D1BD5625DA8CF800C6A5D3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		10D1BD5A25DA8D3A00C6A5D3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -139,7 +136,6 @@
 				10D1BD5525DA8CF200C6A5D3 /* QuartzCore.framework in Frameworks */,
 				10D1BD5B25DA8D3A00C6A5D3 /* CoreGraphics.framework in Frameworks */,
 				1099E40325BB33B100A3EB7D /* Hero in Frameworks */,
-				10B1F42D25FB7712004E417A /* FirebaseCrashlytics in Frameworks */,
 				1099E40D25BB375B00A3EB7D /* FacebookCore in Frameworks */,
 				69EF672C25A5B1E00009F5D1 /* ApolloSQLite in Frameworks */,
 			);
@@ -257,7 +253,6 @@
 		69F9DCDE258CB21300F99396 = {
 			isa = PBXGroup;
 			children = (
-				10B1F42325FB7317004E417A /* GoogleService-Info.plist */,
 				69EF672125A4C8710009F5D1 /* Codegen */,
 				69F9DCE9258CB21300F99396 /* MortyUI */,
 				1099E41825BB386F00A3EB7D /* MortyUITests */,
@@ -386,8 +381,6 @@
 				69F9DCE4258CB21300F99396 /* Frameworks */,
 				69F9DCE5258CB21300F99396 /* Resources */,
 				1099E43B25BB41F200A3EB7D /* Bitrise Trace SDK - Upload dSYM's */,
-				10B1F43725FB84C2004E417A /* Google Crashlytics */,
-				10B1F43E25FB8E31004E417A /* Fix google isses with SPM */,
 			);
 			buildRules = (
 			);
@@ -405,7 +398,6 @@
 				1099E40C25BB375B00A3EB7D /* FacebookCore */,
 				1099E40E25BB375B00A3EB7D /* FacebookGamingServices */,
 				1099E41025BB375B00A3EB7D /* FacebookLogin */,
-				10B1F42C25FB7712004E417A /* FirebaseCrashlytics */,
 				10B1F43325FB841A004E417A /* Trace */,
 			);
 			productName = MortyUI;
@@ -446,7 +438,6 @@
 				1099E3FD25BB335900A3EB7D /* XCRemoteSwiftPackageReference "CombineCocoa" */,
 				1099E40125BB33B100A3EB7D /* XCRemoteSwiftPackageReference "Hero" */,
 				1099E40925BB375B00A3EB7D /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
-				10B1F42725FB7712004E417A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				10B1F43225FB841A004E417A /* XCRemoteSwiftPackageReference "trace-cocoa-sdk" */,
 			);
 			productRefGroup = 69F9DCE8258CB21300F99396 /* Products */;
@@ -476,7 +467,6 @@
 				69F9DD02258CB40400F99396 /* Queries.graphql in Resources */,
 				10222A1825C18FCA00881344 /* bitrise_configuration.plist in Resources */,
 				69F9DCEF258CB21500F99396 /* Assets.xcassets in Resources */,
-				10B1F42425FB7317004E417A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,46 +491,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "#!/bin/sh\nset +o posix\n\necho \"Bitrise Trace SDK - starting Upload dSYM's\"\n\n# See script header for more information - https://github.com/bitrise-io/trace-cocoa-sdk/blob/main/UploadDSYM/main.swift#L4\n\n# Run script\n/usr/bin/xcrun --sdk macosx swift <(curl -Ls --retry 3 --connect-timeout 20 -H \"Cache-Control: max-age=604800\" https://raw.githubusercontent.com/bitrise-io/trace-cocoa-sdk/main/UploadDSYM/main.swift) Debug\n\n# Script logs can be viewed in Xcode report navigator or Bitrise app build logs\n\necho \"Bitrise Trace SDK - finished Upload dSYM's\"\n";
-			showEnvVarsInLog = 0;
-		};
-		10B1F43725FB84C2004E417A /* Google Crashlytics */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Google Crashlytics";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "${BUILD_DIR%Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\n";
-			showEnvVarsInLog = 0;
-		};
-		10B1F43E25FB8E31004E417A /* Fix google isses with SPM */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Fix google isses with SPM";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Fixes binary framework bug, see:\n# https://developer.apple.com/documentation/xcode-release-notes/xcode-12_4-release-notes#Swift-Packages\n# https://github.com/firebase/firebase-ios-sdk/issues/6472\n#\n\necho \"Removing static frameworks from ${TARGET_NAME}.app\"\nfind \"${BUILT_PRODUCTS_DIR}/${TARGET_NAME}.app/\" -name '*.framework' -print0 | while IFS= read -r -d '' fm; do\n    name=$(basename \"${fm}\" .framework)\n    target=\"${fm}/${name}\"\n    echo \"Checking: ${fm}\"\n    if file \"${target}\" | grep -q \"current ar archive\"; then\n        rm -rf \"${fm}\"\n        echo \"Removed static framework: ${fm}\"\n    fi\ndone\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -886,20 +836,12 @@
 				minimumVersion = 9.0.0;
 			};
 		};
-		10B1F42725FB7712004E417A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 7.8.0;
-			};
-		};
 		10B1F43225FB841A004E417A /* XCRemoteSwiftPackageReference "trace-cocoa-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/bitrise-io/trace-cocoa-sdk.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.7.28;
+				minimumVersion = 1.7.35;
 			};
 		};
 		69F9DCFA258CB2DF00F99396 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
@@ -955,11 +897,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1099E40925BB375B00A3EB7D /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
 			productName = FacebookLogin;
-		};
-		10B1F42C25FB7712004E417A /* FirebaseCrashlytics */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 10B1F42725FB7712004E417A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseCrashlytics;
 		};
 		10B1F43325FB841A004E417A /* Trace */ = {
 			isa = XCSwiftPackageProductDependency;
